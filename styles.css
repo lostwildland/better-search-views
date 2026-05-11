@@ -162,6 +162,12 @@ body:not(.is-grabbing)
   height: calc(1em * var(--line-height-tight));
 }
 
+.better-search-views-heading-token {
+  font-size: var(--font-ui-smaller);
+  font-weight: var(--font-medium);
+  line-height: 1;
+}
+
 .better-search-views-tree .collapse-icon {
   display: flex;
   align-items: center;

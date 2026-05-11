@@ -19,6 +19,7 @@ export function Branch(props: BranchProps) {
       text: props.contextTree.text,
       type: props.contextTree.type,
       position: props.contextTree.cacheItem.position,
+      level: (props.contextTree.cacheItem as any)?.level,
     };
     return [breadcrumbForBranch, ...(props.contextTree.breadcrumbs || [])];
   };

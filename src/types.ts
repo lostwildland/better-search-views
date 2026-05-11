@@ -46,6 +46,7 @@ export interface Breadcrumb {
   text: string;
   type: TreeType;
   position: Pos;
+  level?: number;
 }
 
 export type MouseOverEvent = MouseEvent & {

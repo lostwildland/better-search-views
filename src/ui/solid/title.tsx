@@ -1,8 +1,6 @@
 import { For, Match, Switch } from "solid-js";
 import { usePluginContext } from "./plugin-context";
 import { ListIcon } from "./icons/list-icon";
-import { ArrowRightIcon } from "./icons/arrow-right-icon";
-import { HeadingIcon } from "./icons/heading-icon";
 import { Breadcrumb, ContextTree, MouseOverEvent } from "../../types";
 import { listItemToken } from "../../patterns";
 
@@ -46,7 +44,9 @@ export function Title(props: TitleProps) {
                 <div class="better-search-views-breadcrumb-token">
                   <Switch fallback={<ListIcon />}>
                     <Match when={breadcrumb.type === "heading"}>
-                      <HeadingIcon />
+                      <span class="better-search-views-heading-token">
+                        H{breadcrumb.level ?? ""}
+                      </span>
                     </Match>
                   </Switch>
                 </div>

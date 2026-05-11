@@ -10,6 +10,7 @@ export function collapseEmptyNodes(
       text: firstBranch.text,
       type: firstBranch.type,
       position: firstBranch.cacheItem?.position,
+      level: (firstBranch.cacheItem as any)?.level,
     };
 
     return collapseEmptyNodes({
