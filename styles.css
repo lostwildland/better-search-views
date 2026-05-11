@@ -23,7 +23,12 @@
 
 .better-search-views-file-match a {
   cursor: default;
+  color: var(--link-color, var(--text-accent));
   text-decoration: none;
+}
+
+.better-search-views-file-match a:hover {
+  color: var(--link-color-hover, var(--text-accent-hover));
 }
 
 /* Copied from Obsidian */
@@ -78,6 +83,18 @@
 
 .better-search-views-titles-container .tree-item-inner:not(:hover) {
   color: var(--text-muted);
+}
+
+.tree-item.search-result:has(> .search-result-file-matches .better-search-views-tree)
+  > .search-result-file-title
+  .tree-item-inner {
+  color: var(--link-color, var(--text-accent));
+}
+
+.tree-item.search-result:has(> .search-result-file-matches .better-search-views-tree)
+  > .search-result-file-title:hover
+  .tree-item-inner {
+  color: var(--link-color-hover, var(--text-accent-hover));
 }
 
 .search-result-file-matches:has(.better-search-views-tree) {
