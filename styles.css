@@ -89,6 +89,7 @@
   > .search-result-file-title
   .tree-item-inner {
   color: var(--link-color, var(--text-accent));
+  font-size: var(--h3-size);
 }
 
 .tree-item.search-result:has(> .search-result-file-matches .better-search-views-tree)
