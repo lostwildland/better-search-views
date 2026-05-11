@@ -173,10 +173,21 @@ body:not(.is-grabbing)
   border-radius: var(--radius-s);
 }
 
+.better-search-views-tree
+  > .tree-item-self.search-result-file-title
+  > .collapse-icon {
+  margin-left: -8px;
+}
+
 .better-search-views-titles-container {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  margin-left: 12px;
+}
+
+.better-search-views-titles-container .tree-item-inner {
+  align-items: flex-start;
 }
 
 .markdown-source-view.mod-cm6
